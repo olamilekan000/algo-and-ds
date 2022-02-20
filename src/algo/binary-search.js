@@ -20,7 +20,12 @@ const data = [2, 3, 4, 10, 40]
   - If the value of the search key is less than the item in the middle of the interval, 
     narrow the interval to the lower half (left segment of the array). Otherwise, narrow it to the upper half (right segment of the array). 
   - Repeatedly check until the value is found or the interval is empty.
+
+  Worst and Average Case: O(log n)
+  Best Case: O(1)
  */
+
+  
 const binarySearch = (sortedAarry =[], searchNum, start=0, end=0) => {
 
   let mid = Math.floor((start + end)/2)
